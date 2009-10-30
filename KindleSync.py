@@ -54,7 +54,7 @@ def main(argv=None):
                              LocalSyncedFiles)
     for file in DeletedOnKindle:
         print "Deleting %s form local system" % file
-        os.unlink(LocalSyncPath)
+        os.unlink(os.path.join(LocalSyncPath, file))
     # Ok, now copy over any new files
     ToBeAddedFiles = glob.glob(os.path.join(LocalPath, "*.pdf"))
     for file in ToBeAddedFiles:
