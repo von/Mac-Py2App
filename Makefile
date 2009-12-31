@@ -19,6 +19,9 @@ FireFoxDefault.app: FireFoxDefault.py Firefox.icns
 FireFoxPersonal.app: FireFoxPersonal.py Firefox.icns 
 	py2applet $^
 
+FireFoxDevelopment.app: FireFoxDevelopment.py Firefox.icns
+	py2applet $^
+
 FireFoxProfileManager.app: FireFoxProfileManager.py Firefox.icns 
 	py2applet $^
 
